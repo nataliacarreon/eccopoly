@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 80%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    .container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 4rem 1fr 4rem;
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 10px;
+            grid-template-areas:
+            "e e e"
+            "d d d"
+            "x c v"
+    }
+    body {
+        line-height: 1;
+    }
+    main {
+        grid-area: e;   
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+#vid-haiti {
+    position: fixed;
+    z-index: -1;
+} 
+@media (min-aspect-ratio: 16/9) {
+    #vid-haiti {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #vid-haiti {
+        width: auto;
+        height: 100%;
+    }
+}
+body {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#ecco {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*-----MobileFirst-----------*/
+/*Logo*/
+@media (max-width: 768px) {
+nav {
+    position: absolute;
+    display: block;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+li {
+    text-align: center;
+    padding: .5em;
+    list-style: none;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .5s;
+}
+.line:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+a:hover {
+    color: lightgrey;
+}
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 769px) {
+    nav {
+        position: absolute;
+        display: inline-flex;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    nav .principal{
+        text-decoration: none;
+    }
+    nav li {
+        padding: 1em;
+        list-style: none;
+        
+    }
+    li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+    }
+    .line::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .5s;
+    }
+    .line:hover::after {
+        width: 100%;
+        transition: width .5s;
+    }
+    a:hover {
+        color: lightgrey;
+    }
+}
+/*---FIN---MOBILE*/
+
+/* --------------------------PARALLAX------------------------------ */
+#scene div{
+    width: 100vw;
+    height: 100vh;
+
+}
+#flor1 {
+    /* tradicional; */
+    position: absolute;
+    width: 15vw;
+    top: 80vh;
+    left: 10vw; 
+}
+#flor2 {
+    position: absolute;
+    width: 70vw;
+    top: 50vh;
+    left: 0vw;
+    transform: rotate(60deg);
+}
+
+#flor3 {
+    /* picos; */
+    position: absolute;
+    width: 15vw;
+    top: -10vh;
+    left: 60vw;
+    transform: rotate(-40deg);
+}
+
+#flor4 {
+    /* hoja */
+    position: absolute;
+    width: 50vw;
+    top: -40vh;
+    left: 50vw;
+    transform: rotate(-120deg);
+}
+#flor5 {
+    /* hawai */
+    position: absolute;
+    width: 10vw;
+    top: 15vh;
+    left: 50vw;
+}
+/* ---------------------------------idiomas--------------------------- */
+.idiomas{
+    display: inline-flex;
+    position: absolute;
+    width: 100vw;
+    justify-content: right;
+    z-index: 90;
+}
+
+.idiomas ul {
+    display: inline-flex;
+    position: absolute;
+    padding: 2em;
+    margin: 1 em;
+}
+
+.idiomas ul li{
+    color: white;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        padding: 1em;
+        list-style: none;
+}
+
+.idiomas ul li:hover{
+    color: gray;
+}
+
+.idiomas ul a {
+        text-decoration: none;
+}

@@ -1,0 +1,596 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	height: 330vh;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+
+/* -------------------mobilefirst---------------- */
+/* contenedores */
+.containeruno {
+	margin: 2rem;
+}
+
+.unotxt {
+	padding: 30px;
+	font-family: 'Open Sans', serif;
+
+}
+
+.unoimg {
+	margin: 30px;
+	overflow: hidden;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+/*Logo*/
+
+.center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}	
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+/* --------INICIO---------menu------ */
+.menu{
+	height: 30vh;
+}
+/*Logo*/
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}	
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	
+	/* --------INICIO---------menu------ */
+/*Logo*/
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}	
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	/* --------INICIO---------menu------ */
+/*Logo*/
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}	
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+	display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	/* --------INICIO---------menu------ */
+
+	/*Logo*/
+	
+	.center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+	}	
+
+	nav {
+		position: relative;
+		display: block;
+		top: 5%;
+		justify-content: center;
+		z-index: 3;
+		padding: 3rem 0rem 0rem 0rem;
+		
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		color: black;
+		text-decoration: none;
+		display: block;
+		padding: 0 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	}
+
+	/* --------FIN---------menu------ */
+	
+  }
+   
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 20px) and (max-width: 480px) {
+	
+	/* --------INICIO---------menu------ */
+
+/*Logo*/
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}	
+
+nav {
+	position: relative;
+	display: block;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 2rem 0rem 0rem 1rem;
+	
+}
+li {
+    display: block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+	display: block;
+    padding: .2rem 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+
+/* --------FIN---------menu------ */
+  }
+
+/* --------INICIO---------menu------ */
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .5s;
+}
+.line:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+a:hover {
+    color: lightgrey;
+} 
+
+.menu {
+	padding-bottom: 3rem;
+} 
+/* --------FIN---------menu------*/
+/* --------INICIO---------titulos------ */
+
+.enc {	
+	height: 300px;
+	width: 100vw;
+	display: flex;
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+transition:filter 0.5s;
+-webkit-transition:-webkit-filter .3s;
+
+}
+
+.enc.uno{
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(0, 0, 0, 0.3) 100%), url(../images/tit1.jpg);
+	background-position-y: 80%;
+}
+
+.enc.dos{
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(0, 0, 0, 0.3) 100%), url(../images/tit2.jpg);
+	background-position-y: 55%;
+}
+
+.enc.tres {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%,rgba(0, 0, 0, 0.3) 100%), url(../images/tit3.jpg);
+	background-position-y: 60%;
+}
+
+#enc1:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+#enc2:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+#enc3:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+
+	
+.parallax-text-wrap {
+	position: relative;
+	width: 100%;
+
+}
+.parallax-text-wrap h3 {
+	position: relative;
+   font-size: 3rem;
+   font-family: 'Raleway', sans-serif;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+	/* mix-blend-mode: lighten; */
+	
+}
+
+h3 {
+	position: relative;
+   font-size: 2.5rem;
+   font-family: 'Raleway', sans-serif;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+	margin-bottom: 2rem;
+	/* mix-blend-mode: lighten; */
+	
+}
+.parallax-text {
+	/* margin-top: 0rem; */
+	position: absolute;
+	display: flex;
+    font-family: 'Rubik Mono One', sans-serif;
+	font-size: 130px;
+	/* letter-spacing: 0.28em; */
+	text-transform: uppercase;
+	color: tomato;
+	mix-blend-mode: difference;
+	opacity: 0.5;
+	justify-content: center;
+	height: 120px;
+	width: 100vw;
+}
+
+
+/* --------FIN---------titulos------ */
+/* --------inico---------parrafos------ */
+
+@media (min-width: 768px){
+
+	.parallax-text {
+		font-size: 250px;
+		margin-top: 1rem;
+	}
+
+.containeruno {
+	margin: 4rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.unotxt {
+	width: 60%;
+	padding: 30px;
+
+}
+
+.unoimg {
+	width: 40%;
+	height: 50vh;
+	margin: 30px;
+	overflow: hidden;
+	background-image: url(../images/homre1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 40%;
+}
+
+.dosimg {
+	width: 40%;
+	height: 50vh;
+	margin: 30px;
+	overflow: hidden;
+	background-image: url(../images/mujer2.jpg);
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 90%;
+  	background-size: cover;
+}
+.tresimg {
+	width: 40%;
+	height: 50vh;
+	margin: 30px;
+	overflow: hidden;
+	background-image: url(../images/sust1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+:root{
+
+	--color: 100%;
+	--color2: 100%;
+	--color3: 100%;
+
+	}
+	
+
+
+}
+/* --------------------capitulares----------------- */
+
+p:first-child::first-letter
+{
+   float:left;
+   color:black;
+   font-size: 53px;
+   padding:9px 5px 0 0;
+   font-family: 'Raleway', sans-serif;
+}
+
+p {
+  	text-align-last: left;
+	padding-bottom: 2px;
+	letter-spacing: 2px;
+	line-height: 27px;
+	font-size: 18px;
+}
+
+/* -------------SCROL UWWWUU-------- */
+#enc1 {
+	filter: grayscale(var(--color));
+}
+#enc2 {
+	filter: grayscale(var(--color2));
+}
+#enc3 {
+	filter: grayscale(var(--color3));
+}
+
+/* ----------------------animaciones------------- */
+.title a {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+	text-decoration: none;
+} 
+
+/* ---------------------------------idiomas--------------------------- */
+.idiomas{
+    display: inline-flex;
+    position: absolute;
+    width: 100vw;
+    justify-content: right;
+    z-index: 90;
+}
+
+.idiomas ul {
+    display: inline-flex;
+    position: absolute;
+    padding: 1em;
+    margin: 1 em;
+}
+
+.idiomas ul li{
+    color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        padding: 1em;
+        list-style: none;
+}
+
+.idiomas ul li:hover{
+    color: gray;
+}
+
+.idiomas ul a {
+        text-decoration: none;
+}
+@media (max-width: 1281px){
+	body {
+		display: block;
+	}
+	.idiomas{
+		position: relative;
+		margin: .5rem 0 3rem 0;
+		font-size: .8em;
+	}
+
+	
+}

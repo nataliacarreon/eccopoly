@@ -1,0 +1,2 @@
+User-agent:*
+Sitemap:http://eccopoli.org/site_map.xml

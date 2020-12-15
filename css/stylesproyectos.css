@@ -1,0 +1,428 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	height: 330vh;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/* ---------------------MENU----------------------- */
+.menu{
+    margin-bottom: 4rem;;
+}
+
+/* -------------------------------------------- */
+.navproyectos {
+    position: sticky;
+    height: 100vh;
+    /* background-color: lightslategray;  */
+    padding: 3rem;
+}
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    position: relative;
+}
+
+.navproyectos li {
+    padding: 20px;
+    display: block;
+}
+
+.galeria {
+    width: 80vw;
+    margin: 0 3rem;
+}
+.gal {
+    display: flex;
+}
+.containerme {
+	display: flex;
+	/* justify-content: space-between; */
+}
+img {
+    height: 30vh;
+    width: auto;
+}
+
+.tex{
+    display: block;
+    float: left;
+    padding: 3rem;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	height: auto;
+	}	
+@media (min-width: 1281px) {
+/*Logo*/
+#ecco {
+	position: relative;
+	padding-left: 3rem;
+}
+.center {
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	height: 100%;
+}
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+/* --------INICIO---------menu------ */
+.menu{
+	height: 30vh;
+}
+
+#ecco {
+	position: relative;
+	padding-left: 3rem;
+}
+#title {
+	color: rgb(0, 0, 0);
+	font-family:'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	
+	/* --------INICIO---------menu------ */
+
+	#ecco {
+		position: relative;
+		padding-left: 3rem;
+	}
+	#title {
+		color: rgb(0, 0, 0);
+		font-family:'Raleway', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	/* --------INICIO---------menu------ */
+
+
+#ecco {
+	position: relative;
+	padding-left: 3rem;
+}
+#title {
+	color: rgb(0, 0, 0);
+	font-family:'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+	display: inline-block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	/* --------INICIO---------menu------ */
+
+	#ecco {
+		position: relative;
+		padding-left: 40px;
+		text-align: left;
+	}
+	#title {
+		color: rgb(0, 0, 0);
+		font-family:'Raleway', sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+	}
+	
+	nav {
+		position: relative;
+		display: block;
+		top: 5%;
+		justify-content: center;
+		z-index: 3;
+		padding: 3rem 0rem 0rem 0rem;
+		
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		color: black;
+		text-decoration: none;
+		display: block;
+		padding: 0 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	}
+
+	/* --------FIN---------menu------ */
+	
+  }
+   
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 20px) and (max-width: 480px) {
+	
+	/* --------INICIO---------menu------ */
+
+#ecco {
+    position: relative;
+    padding-left: 3rem;
+}
+
+#title {
+    color: rgb(0, 0, 0);
+    font-family:'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+nav {
+	position: relative;
+	display: block;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 2rem 0rem 0rem 1rem;
+	
+}
+li {
+    display: block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+	display: block;
+    padding: .2rem 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+
+/* --------FIN---------menu------ */
+  }
+
+  .title a {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+	text-decoration: none;
+} 
+/* ---------------------------------idiomas--------------------------- */
+.idiomas{
+    display: inline-flex;
+    position: absolute;
+    width: 100vw;
+    justify-content: right;
+    z-index: 90;
+}
+
+.idiomas ul {
+    display: inline-flex;
+    position: absolute;
+    padding: 1em;
+    margin: 1 em;
+}
+
+.idiomas ul li{
+    color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        padding: 1em;
+        list-style: none;
+}
+
+.idiomas ul li:hover{
+    color: gray;
+}
+
+.idiomas ul a {
+        text-decoration: none;
+}
+ 
+@media (max-width: 1281px){
+	body {
+		display: block;
+	}
+	.idiomas{
+		position: relative;
+		margin: .5rem 0 3rem 0;
+		font-size: .8em;
+	}
+}

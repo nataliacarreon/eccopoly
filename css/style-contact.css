@@ -1,0 +1,813 @@
+html {
+    box-sizing: border-box;
+    width: 100vw;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    /*.container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 4rem 1fr 4rem;
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 10px;
+            grid-template-areas:
+            "e e e"
+            "d d d"
+            "x c v"
+    }
+    /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+/*Logo*/  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}   
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+/* --------INICIO---------menu------ */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+} 
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	
+	/* --------INICIO---------menu------ */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    } 
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	/* --------INICIO---------menu------ */
+
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    } 
+
+nav {
+	position: relative;
+	display: flex;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 3rem 0rem 0rem 0rem;
+	
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+    /* --------INICIO---------menu------ */
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    } 
+	
+	nav {
+		position: relative;
+		display: block;
+		top: 5%;
+		justify-content: center;
+		z-index: 3;
+		padding: 3rem 0rem 0rem 0rem;
+		
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		color: #000;
+		text-decoration: none;
+		display: block;
+		padding: 0 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+	}
+
+	/* --------FIN---------menu------ */
+	
+  }
+  
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	
+    /* --------INICIO---------menu------ */
+    
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+} 
+
+nav {
+	position: relative;
+	display: block;
+	top: 5%;
+	justify-content: center;
+	z-index: 3;
+	padding: 2rem 0rem 0rem 1rem;
+	
+}
+li {
+    display: block;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+	display: block;
+    padding: .2rem 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/* --------FIN---------menu------ */
+  }
+
+/* --------INICIO---------menu------ */
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .5s;
+}
+.line:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+a:hover {
+    color: lightgrey;
+} 
+/* --------FIN---------menu------*/
+            /*Header Contact*/
+.contacto {
+    padding: 150px 0;
+    position: relative;
+    background-image: url(../images/contact-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 71%;
+    opacity: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    top: 3rem;
+    overflow: hidden;
+}/*
+.parallax-text-wrap {
+    position: absolute;
+    width: 100%;
+    height: 23%;
+}
+.parallax-text {
+    position: absolute;
+    bottom: -90%;
+    left: 22%;
+    font-size: 120px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 60%;
+    font-family: 'Raleway', sans-serif;
+} */
+
+	
+.parallax-text-wrap {
+	position: relative;
+	width: 100%;
+
+}
+.parallax-text-wrap h3 {
+	position: relative;
+   font-size: 3rem;
+   font-family: 'Raleway', sans-serif;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+	/* mix-blend-mode: lighten; */
+	
+}
+.parallax-text {
+	padding: 3rem;
+	position: absolute;
+	display: flex;
+    font-family: 'Rubik Mono One', sans-serif;
+	font-size: 12vw;
+	/* letter-spacing: 0.28em; */
+	text-transform: uppercase;
+	color: tomato;
+	mix-blend-mode: difference;
+	opacity: 0.5;
+	justify-content: center;
+	height: 120px;
+	width: 100vw;
+}
+    /*Background image*/
+.background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-image: url(../images/contact-back.jpg);
+    background-size: cover;
+    padding: 55px 0px;
+
+}
+#box-contact {
+    position: relative;
+    background-color: #C28933;
+    width: 30vw;
+    height: 60vh;
+    padding: 2em;
+    margin: 3rem;
+    z-index: 1;
+}
+#box-contact h2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffff;
+}
+#box-contact h4 {
+    padding: 0 0 0 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 50%;
+    color: white;
+}
+
+.a {
+    line-height: 900%;
+    color: #ffff;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    /*padding: 0 (arriba) 0 (derecha) 0 (abajo) 0 (izquierda)*/
+.b {
+    color: #ffff;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.social {
+    padding: 4rem 0 0 0;
+    position: relative;
+    z-index: 30000;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color:#ffff;
+    border-radius: 50%;
+}
+.dot:hover {
+    background-color: #CFCFCF;
+}
+
+.fab {
+    padding: 5px 0 0 0;
+}
+            
+
+.face{
+    text-align: center;
+    float: left;
+    width: 33%;
+    display: flex;
+}
+/*------SECTION BACKGROUND---------*/
+.background {
+    background-image: url(../images/contact-back.jpg);
+    background-size: cover;
+}
+#box-mensaje {
+    background-color: #ffff;
+    width: 60vw;
+    height: 80vh;
+    padding: 2em;
+    margin: 3rem;
+    position: relative;
+    float: right;
+}
+
+#box-mensaje h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+#box-mensaje h4 {
+    padding: 0 0 0 5.5rem;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 50%;
+    color:#000;
+}
+/* #fname {
+    width: 180px;
+    position: relative;
+    top: 70px;
+}
+#lname {
+    width: 180px;
+    position: relative;
+    top: 70px;
+    left: 57px;
+}
+#phnumber {
+    width: 180px;
+    position: relative;
+    top: 125px;
+    left: -370px;
+}
+#email {
+    width: 180px;
+    position: relative;
+    top: 125px;
+    left: 57px;
+}*/
+#mensaje {
+    width: 300px;
+    height: 12rem;
+    position: relative;
+    top: .2rem;
+    bottom: 2rem;
+    float: right;
+} 
+
+.form{
+    width: 400px;
+}
+
+.form input{
+    width: 400px;
+    height: 3rem;
+    margin: 1rem;
+}
+#submit {
+    width: 140px;
+    height: 40px;
+    background-color: #D9001B;
+    color: #ffff;
+    /* position: relative;  */
+    /* top: 200px;
+    left: 280px; */
+    border: none;
+    border-radius: 29px;
+    font-size: 13px;
+}
+#submit:hover {
+    background-color: #A70014;
+}
+div h1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    /* top: 45rem; */
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+}
+.bounceInLeft {
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+.bounceInButtom {
+    nimation-duration: 2s;
+    animation-delay: 1s;
+}
+.soportemos{
+    float: left;
+    padding: 2rem;
+    margin: 3rem;
+}
+
+.imgdonate {
+    width: 48%;
+    /* height: 100%; */
+    padding: 1em;
+    margin: 1em;
+    background-color: #008CBA;
+    overflow: hidden;
+}
+.imgdonate img {
+    width: 100%;
+    position: relative;
+    
+    /* top: 58rem;
+    left: 23rem; */
+    z-index: 1;
+}
+.datosdonar{
+    width: 50%;
+    height: 50vh;
+    float: right;
+    padding: 2rem;
+}
+#box-donate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* top: 33rem; */
+    /* left: 294px; */
+    background-color: #fff;
+    width: 60vw;
+    height: 50vh;
+    padding: 1rem;
+    margin: 3rem;
+    padding: 2rem;
+}
+.button {
+  position: relative;
+  /* top: -8rem;  
+  left: 298px; */
+  background-color: #ffff;
+  border: 2px solid #008CBA;
+  padding: 4px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #000;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: 0.8s;
+}
+.button:hover {
+    color: #ffff;
+    background-color: #3498db;
+}
+#botones-donar {
+    position: relative;
+
+    /* top: 33rem; */
+}
+.button2 {
+    background-color: #269300;
+    /* padding: 13px 49px; */
+    border-radius: 12px;
+    position: relative;
+    /* top: -11rem;
+    left: 40rem; */
+    /* margin: 31px; */
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: center;
+}
+.button2:hover {
+    background-color: #207900;
+}
+
+.button5 div {
+    position: relative;
+    /* top: .1em; */
+}
+.button6 p {
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+.button6 div {
+    position: relative;
+    top: 8px;
+}
+#cantidad {
+    height: 25px;
+    position: relative;
+    /* left: -20%;
+    top: -4rem; */
+}
+div h6 {
+    color: #000;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    /* left: -19rem; */
+    /* top: 1rem; */
+    font-size: 25px;
+}
+div h3 {
+    color: #000;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    position: relative;
+    /* left: -357px; */
+    /* top: 3rem; */
+    font-size: 25px;
+}
+.form{
+    display: flex;
+}
+
+.textpago {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.title a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+	text-decoration: none;
+} 
+
+.containercontacto {
+    display: flex;
+    width: 100vw;
+}
+
+/* ---------------------------------idiomas--------------------------- */
+.idiomas{
+    display: inline-flex;
+    position: absolute;
+    width: 100vw;
+    justify-content: right;
+    z-index: 90;
+}
+
+.idiomas ul {
+    display: inline-flex;
+    position: absolute;
+    padding: 1em;
+    margin: 1 em;
+}
+
+.idiomas ul li{
+    color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        padding: 1em;
+        list-style: none;
+}
+
+.idiomas ul li:hover{
+    color: gray;
+}
+
+.idiomas ul a {
+        text-decoration: none;
+}
+
+@media (max-width: 1281px){
+	body {
+        display: block;
+        max-width: 100vw;
+        /* height: auto;
+        overflow: hidden; */
+	}
+	.idiomas{
+		position: relative;
+		margin: .5rem 0 3rem 0;
+		font-size: .8em;
+    }
+    
+.containercontacto{
+    display: block;
+
+}
+#box-contact {
+    position: relative;
+    background-color: 
+    #C28933;
+    width: 90vw;
+    height: 60vh;
+    /* padding: 2em; */
+    /* margin: 3rem; */
+    z-index: 1;
+}
+
+    #box-mensaje {
+        background-color: 
+        #ffff;
+        width: 100vw;
+        /* height: 80vh;
+        padding: 2em; */
+        margin: 0rem;
+        position: relative;
+        display: block;
+        /* float: right; */
+    }
+    .form input {
+        width: 70vw;
+        height: 1rem;
+        margin: .5rem;
+    }
+    .form{
+        display: block;
+    }
+
+    #mensaje {
+        width: 70vw;
+        height: 12rem;
+        position: relative;
+        top: .2rem;
+        bottom: 2rem;
+        float: none;
+    }
+.background{
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+}
+#box-donate {
+    display: block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* position: relative; */
+    /* top: 53rem; */
+    /* left: 294px; */
+    background-color: rgba(255, 255, 255, 0);
+    width: 90vw;
+    /* height: 50vh; */
+    /* padding: 1rem; */
+    /* margin: 3rem; */
+}
+.imgdonate img {
+    display: none;
+}
+.datosdonar{
+    width: 90vw;
+    height: 50vh;
+    position: absolute;
+    background-color: white;
+    
+    /* float: right; */
+    /* padding: 2rem; */
+}
+
+}
